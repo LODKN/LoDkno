@@ -7005,7 +7005,7 @@ send(msg.chat_id_, msg.id_," *✹︙تم تعطيل الرابط*")
 return false end
 end
 if text == "المطور" or text == "مطور" then
-local TEXT_SUD = database:get(bot_id..'FLoRX:TEXT_SUDO')
+local TEXT_SUD = database:get(bot_id..'RaVeN:TEXT_SUDO')
 if TEXT_SUDO then 
 send(msg.chat_id_, msg.id_,TEXT_SUDO)
 else
