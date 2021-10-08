@@ -6993,14 +6993,14 @@ end
 end
 if text == "تفعيل رابط" or text == 'تفعيل الرابط' then
 if Mod(msg) then  
-database:set(bot_id.."Link_Group:status"..msg.chat_id_,true) 
+database:set(bot_id.."Link_Group"..msg.chat_id_,true) 
 send(msg.chat_id_, msg.id_," *✹︙تم تفعيل الرابط*") 
 return false  
 end
 end
 if text == "تعطيل رابط" or text == 'تعطيل الرابط' then
 if Mod(msg) then  
-database:del(bot_id.."Link_Group:status"..msg.chat_id_) 
+database:del(bot_id.."Link_Group"..msg.chat_id_) 
 send(msg.chat_id_, msg.id_," *✹︙تم تعطيل الرابط*") 
 return false end
 end
@@ -7039,7 +7039,7 @@ send(msg.chat_id_, msg.id_," *✹︙تم تعطيل الصوره*")
 return false end
 end
 if text == "الرابط" then 
-local status_Link = database:get(bot_id.."Link_Group:status"..msg.chat_id_)
+local status_Link = database:get(bot_id.."Link_Group"..msg.chat_id_)
 if not status_Link then
 send(msg.chat_id_, msg.id_,"✹︙جلب الرابط معطل") 
 return false  
