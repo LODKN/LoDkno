@@ -6993,14 +6993,14 @@ end
 end
 if text == "تفعيل رابط" or text == 'تفعيل الرابط' then
 if Mod(msg) then  
-database:set(bot_id.."Link_Group"..msg.chat_id_,true) 
+database:set(bot_id.."Link_Group:status"..msg.chat_id_,true) 
 send(msg.chat_id_, msg.id_," *✹︙تم تفعيل الرابط*") 
 return false  
 end
 end
 if text == "تعطيل رابط" or text == 'تعطيل الرابط' then
 if Mod(msg) then  
-database:del(bot_id.."Link_Group"..msg.chat_id_) 
+database:del(bot_id.."Link_Group:status"..msg.chat_id_) 
 send(msg.chat_id_, msg.id_," *✹︙تم تعطيل الرابط*") 
 return false end
 end
@@ -7039,32 +7039,32 @@ send(msg.chat_id_, msg.id_," *✹︙تم تعطيل الصوره*")
 return false end
 end
 if text == "الرابط" then 
-local status_Link = database:get(bot_id.."Link_Group"..msg.chat_id_)
+local status_Link = database:get(bot_id.."Link_Group:status"..msg.chat_id_)
 if not status_Link then
-send(msg.chat_id_, msg.id_,"✹︙جلب الرابط معطل") 
+send(msg.chat_id_, msg.id_,"✹︙الرابط معطل") 
 return false  
 end
+tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,ta) 
 local link = database:get(bot_id.."Private:Group:Link"..msg.chat_id_)            
 if link then                              
-send(msg.chat_id_,msg.id_,"✹︙LinK GrOup : \n ["..link.."]")                          
+send(msg.chat_id_,msg.id_,' ['..ta.title_..']('..link..')')                          
 else                
-local InviteLink = json:decode(https.request("https://api.telegram.org/bot"..token.."/getChat?chat_id="..msg.chat_id_))
-if InviteLink.result.invite_link then
-jk = InviteLink.result.invite_link
-elseif not InviteLink.result.invite_link then
-https.request("https://api.telegram.org/bot"..token.."/exportChatInviteLink?chat_id="..msg.chat_id_)
-jk = InviteLink.result.invite_link
-end 
-send(msg.chat_id_,msg.id_,"✹︙LinK GrOup : \n ["..jk.."]")                          
+local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..token..'/exportChatInviteLink?chat_id='..msg.chat_id_))
+if linkgpp.ok == true then 
+linkgp = ' ['..ta.title_..']('..linkgpp.result..')'
+else
+linkgp = '✹︙لا يوجد رابط ارسل ضع رابط'
+end  
+send(msg.chat_id_, msg.id_,linkgp)              
 end            
+ end,nil)
 end
-if text == "مسح الرابط" or text == "حذف الرابط" and GetSourseMember(msg) then   
-if Addictive(msg) then     
-send(msg.chat_id_,msg.id_,"✹︙تم مسح الرابط ")           
+if text == 'مسح الرابط' or text == 'حذف الرابط' then
+if Mod(msg) then     
+send(msg.chat_id_,msg.id_," تم مسح الرابط ✹︙")
 database:del(bot_id.."Private:Group:Link"..msg.chat_id_) 
 return false      
 end
-return false  
 end
 if text and text:match("^ضع صوره") and Mod(msg) and msg.reply_to_message_id_ == 0 then  
 database:set(bot_id..'Change:Chat:Photo'..msg.chat_id_..':'..msg.sender_user_id_,true) 
