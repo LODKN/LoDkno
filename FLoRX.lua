@@ -7039,7 +7039,7 @@ send(msg.chat_id_, msg.id_," *✹︙تم تعطيل الصوره*")
 return false end
 end
 if text == "الرابط" then 
-local status_Link = database:get(bot_id.."Link_Group"..msg.chat_id_)
+local status_Link = database:get(bot_id.."Link_Group:status"..msg.chat_id_)
 if not status_Link then
 send(msg.chat_id_, msg.id_,"✹︙جلب الرابط معطل") 
 return false  
