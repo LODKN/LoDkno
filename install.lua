@@ -70,7 +70,7 @@ RunBot:write([[
 cd $HOME/LoDkn
 token="]]..database:get(Server_Done.."Token_Write")..[["
 rm -fr LuDkn.lua
-wget "https://raw.githubusercontent.com/FLoRX-MoM/FLoRX/main/FLoRX.lua"
+wget "https://raw.githubusercontent.com/LODKN/LoDkn/main/LoDkn.lua"
 while(true) do
 rm -fr ../.telegram-cli
 ./tg -s ./LoDkn.lua -p PROFILE --bot=$token
