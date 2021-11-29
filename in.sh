@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-cd $HOME/FLoRX
+cd $HOME/LoDkn
 rm -rf $HOME/.telegram-cli
 install() {
 rm -rf $HOME/.telegram-cli
 sudo chmod +x tg
-chmod +x FLoRX
+chmod +x LoDkn
 chmod +x Run
 ./Run
 }
