@@ -64,27 +64,27 @@ os.execute('lua install.lua')
 end
 local function Files_Info_Get()
 Create_Info(database:get(Server_Done.."Token_Write"),database:get(Server_Done.."UserSudo_Write"),database:get(Server_Done.."User_Write"))  
-local RunBot = io.open("FLoRX", 'w')
+local RunBot = io.open("LoDkn", 'w')
 RunBot:write([[
 #!/usr/bin/env bash
-cd $HOME/FLoRX
+cd $HOME/LoDkn
 token="]]..database:get(Server_Done.."Token_Write")..[["
-rm -fr FLoRX.lua
+rm -fr LuDkn.lua
 wget "https://raw.githubusercontent.com/FLoRX-MoM/FLoRX/main/FLoRX.lua"
 while(true) do
 rm -fr ../.telegram-cli
-./tg -s ./FLoRX.lua -p PROFILE --bot=$token
+./tg -s ./LoDkn.lua -p PROFILE --bot=$token
 done
 ]])
 RunBot:close()
 local RunTs = io.open("Run", 'w')
 RunTs:write([[
 #!/usr/bin/env bash
-cd $HOME/FLoRX
+cd $HOME/LoDkn
 while(true) do
 rm -fr ../.telegram-cli
-screen -S FLoRX -X kill
-screen -S FLoRX ./FLoRX
+screen -S LoDkn -X kill
+screen -S LoDkn ./LoDkn
 done
 ]])
 RunTs:close()
