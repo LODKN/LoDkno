@@ -9944,10 +9944,10 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '⓵', callback_data="/help1"},{text = '⓶', callback_data="/help2"},{text = '⓷', callback_data="/help3"}},
-{{text = '⓸', callback_data="/help4"},{text = '⓹', callback_data="/help5"}},
-{{text = '⓺', callback_data="/help6"},{text = '⓻', callback_data="/help7"},{text = '⓼', callback_data="/help8"}},
-{{text = '⓽', callback_data="/help9"},{text = '⓵⓪', callback_data="/help10"}},
+{{text = '𝟏', callback_data="/help1"},{text = '𝟐', callback_data="/help2"},{text = '𝟑', callback_data="/help3"}},
+{{text = '𝟒', callback_data="/help4"},{text = '𝟓', callback_data="/help5"}},
+{{text = '𝟔', callback_data="/help6"},{text = '𝟕', callback_data="/help7"},{text = '𝟖', callback_data="/help8"}},
+{{text = '𝟗', callback_data="/help9"},{text = '𝟏𝟎', callback_data="/help10"}},
 {{text = 'الاوامر الرئيسيه', callback_data="/help"}},
 {{text = '-𝗟𝗼𝗱𝗞𝗻 𝗧𝗲𝗮𝗺 .', url="t.me/f55f5"}},
 }
@@ -10002,10 +10002,10 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '⓵', callback_data="/help1"},{text = '⓶', callback_data="/help2"},{text = '⓷', callback_data="/help3"}},
-{{text = '⓸', callback_data="/help4"},{text = '⓹', callback_data="/help5"}},
-{{text = '⓺', callback_data="/help6"},{text = '⓻', callback_data="/help7"},{text = '⓼', callback_data="/help8"}},
-{{text = '⓽', callback_data="/help9"},{text = '⓵⓪', callback_data="/help10"}},
+{{text = '𝟏', callback_data="/help1"},{text = '𝟐', callback_data="/help2"},{text = '𝟑', callback_data="/help3"}},
+{{text = '𝟒', callback_data="/help4"},{text = '𝟓', callback_data="/help5"}},
+{{text = '𝟔', callback_data="/help6"},{text = '𝟕', callback_data="/help7"},{text = '𝟖', callback_data="/help8"}},
+{{text = '𝟗', callback_data="/help9"},{text = '𝟏𝟎', callback_data="/help10"}},
 {{text = 'الاوامر الرئيسيه', callback_data="/help"}},
 {{text = '-𝗟𝗼𝗱𝗞𝗻 𝗧𝗲𝗮𝗺 .', url="t.me/f55f5"}},
 }
@@ -10039,10 +10039,10 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '⓵', callback_data="/help1"},{text = '⓶', callback_data="/help2"},{text = '⓷', callback_data="/help3"}},
-{{text = '⓸', callback_data="/help4"},{text = '⓹', callback_data="/help5"}},
-{{text = '⓺', callback_data="/help6"},{text = '⓻', callback_data="/help7"},{text = '⓼', callback_data="/help8"}},
-{{text = '⓽', callback_data="/help9"},{text = '⓵⓪', callback_data="/help10"}},
+{{text = '𝟏', callback_data="/help1"},{text = '𝟐', callback_data="/help2"},{text = '𝟑', callback_data="/help3"}},
+{{text = '𝟒', callback_data="/help4"},{text = '𝟓', callback_data="/help5"}},
+{{text = '𝟔', callback_data="/help6"},{text = '𝟕', callback_data="/help7"},{text = '𝟖', callback_data="/help8"}},
+{{text = '𝟗', callback_data="/help9"},{text = '𝟏𝟎', callback_data="/help10"}},
 {{text = 'الاوامر الرئيسيه', callback_data="/help"}},
 {{text = '-𝗟𝗼𝗱𝗞𝗻 𝗧𝗲𝗮𝗺 .', url="t.me/f55f5"}},
 }
@@ -10086,11 +10086,11 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '⓵', callback_data="/help1"},{text = '⓶', callback_data="/help2"},{text = '⓷', callback_data="/help3"}},
-{{text = '⓸', callback_data="/help4"},{text = '⓹', callback_data="/help5"}},
-{{text = '⓺', callback_data="/help6"},{text = '⓻', callback_data="/help7"},{text = '⓼', callback_data="/help8"}},
-{{text = '⓽', callback_data="/help9"},{text = '⓵⓪', callback_data="/help10"}},
-{{text = 'الاوامر الرئيسيه', callback_data="/help"}},
+{{text = '𝟏', callback_data="/help1"},{text = '𝟐', callback_data="/help2"},{text = '𝟑', callback_data="/help3"}},
+{{text = '𝟒', callback_data="/help4"},{text = '𝟓', callback_data="/help5"}},
+{{text = '𝟔', callback_data="/help6"},{text = '𝟕', callback_data="/help7"},{text = '𝟖', callback_data="/help8"}},
+{{text = '𝟗', callback_data="/help9"},{text = '𝟏𝟎', callback_data="/help10"}},
+{{text = 'الاوامر الرئيسيه', callback_data="/help"}},{{text = 'الاوامر الرئيسيه', callback_data="/help"}},
 {{text = '-𝗟𝗼𝗱𝗞𝗻 𝗧𝗲𝗮𝗺 .', url="t.me/f55f5"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -10135,10 +10135,10 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '⓵', callback_data="/help1"},{text = '⓶', callback_data="/help2"},{text = '⓷', callback_data="/help3"}},
-{{text = '⓸', callback_data="/help4"},{text = '⓹', callback_data="/help5"}},
-{{text = '⓺', callback_data="/help6"},{text = '⓻', callback_data="/help7"},{text = '⓼', callback_data="/help8"}},
-{{text = '⓽', callback_data="/help9"},{text = '⓵⓪', callback_data="/help10"}},
+{{text = '𝟏', callback_data="/help1"},{text = '𝟐', callback_data="/help2"},{text = '𝟑', callback_data="/help3"}},
+{{text = '𝟒', callback_data="/help4"},{text = '𝟓', callback_data="/help5"}},
+{{text = '𝟔', callback_data="/help6"},{text = '𝟕', callback_data="/help7"},{text = '𝟖', callback_data="/help8"}},
+{{text = '𝟗', callback_data="/help9"},{text = '𝟏𝟎', callback_data="/help10"}},
 {{text = 'الاوامر الرئيسيه', callback_data="/help"}},
 {{text = '-𝗟𝗼𝗱𝗞𝗻 𝗧𝗲𝗮𝗺 .', url="t.me/f55f5"}},
 }
@@ -10203,10 +10203,10 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '⓵', callback_data="/help1"},{text = '⓶', callback_data="/help2"},{text = '⓷', callback_data="/help3"}},
-{{text = '⓸', callback_data="/help4"},{text = '⓹', callback_data="/help5"}},
-{{text = '⓺', callback_data="/help6"},{text = '⓻', callback_data="/help7"},{text = '⓼', callback_data="/help8"}},
-{{text = '⓽', callback_data="/help9"},{text = '⓵⓪', callback_data="/help10"}},
+{{text = '𝟏', callback_data="/help1"},{text = '𝟐', callback_data="/help2"},{text = '𝟑', callback_data="/help3"}},
+{{text = '𝟒', callback_data="/help4"},{text = '𝟓', callback_data="/help5"}},
+{{text = '𝟔', callback_data="/help6"},{text = '𝟕', callback_data="/help7"},{text = '𝟖', callback_data="/help8"}},
+{{text = '𝟗', callback_data="/help9"},{text = '𝟏𝟎', callback_data="/help10"}},
 {{text = 'الاوامر الرئيسيه', callback_data="/help"}},
 {{text = '-𝗟𝗼𝗱𝗞𝗻 𝗧𝗲𝗮𝗺 .', url="t.me/f55f5"}},
 }
@@ -10260,10 +10260,10 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '⓵', callback_data="/help1"},{text = '⓶', callback_data="/help2"},{text = '⓷', callback_data="/help3"}},
-{{text = '⓸', callback_data="/help4"},{text = '⓹', callback_data="/help5"}},
-{{text = '⓺', callback_data="/help6"},{text = '⓻', callback_data="/help7"},{text = '⓼', callback_data="/help8"}},
-{{text = '⓽', callback_data="/help9"},{text = '⓵⓪', callback_data="/help10"}},
+{{text = '𝟏', callback_data="/help1"},{text = '𝟐', callback_data="/help2"},{text = '𝟑', callback_data="/help3"}},
+{{text = '𝟒', callback_data="/help4"},{text = '𝟓', callback_data="/help5"}},
+{{text = '𝟔', callback_data="/help6"},{text = '𝟕', callback_data="/help7"},{text = '𝟖', callback_data="/help8"}},
+{{text = '𝟗', callback_data="/help9"},{text = '𝟏𝟎', callback_data="/help10"}},
 {{text = 'الاوامر الرئيسيه', callback_data="/help"}},
 {{text = '-𝗟𝗼𝗱𝗞𝗻 𝗧𝗲𝗮𝗺 .', url="t.me/f55f5"}},
 }
@@ -10293,10 +10293,10 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '⓵', callback_data="/help1"},{text = '⓶', callback_data="/help2"},{text = '⓷', callback_data="/help3"}},
-{{text = '⓸', callback_data="/help4"},{text = '⓹', callback_data="/help5"}},
-{{text = '⓺', callback_data="/help6"},{text = '⓻', callback_data="/help7"},{text = '⓼', callback_data="/help8"}},
-{{text = '⓽', callback_data="/help9"},{text = '⓵⓪', callback_data="/help10"}},
+{{text = '𝟏', callback_data="/help1"},{text = '𝟐', callback_data="/help2"},{text = '𝟑', callback_data="/help3"}},
+{{text = '𝟒', callback_data="/help4"},{text = '𝟓', callback_data="/help5"}},
+{{text = '𝟔', callback_data="/help6"},{text = '𝟕', callback_data="/help7"},{text = '𝟖', callback_data="/help8"}},
+{{text = '𝟗', callback_data="/help9"},{text = '𝟏𝟎', callback_data="/help10"}},
 {{text = 'الاوامر الرئيسيه', callback_data="/help"}},
 {{text = '-𝗟𝗼𝗱𝗞𝗻 𝗧𝗲𝗮𝗺 .', url="t.me/f55f5"}},
 }
@@ -10379,10 +10379,10 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '⓵', callback_data="/help1"},{text = '⓶', callback_data="/help2"},{text = '⓷', callback_data="/help3"}},
-{{text = '⓸', callback_data="/help4"},{text = '⓹', callback_data="/help5"}},
-{{text = '⓺', callback_data="/help6"},{text = '⓻', callback_data="/help7"},{text = '⓼', callback_data="/help8"}},
-{{text = '⓽', callback_data="/help9"},{text = '⓵⓪', callback_data="/help10"}},
+{{text = '𝟏', callback_data="/help1"},{text = '𝟐', callback_data="/help2"},{text = '𝟑', callback_data="/help3"}},
+{{text = '𝟒', callback_data="/help4"},{text = '𝟓', callback_data="/help5"}},
+{{text = '𝟔', callback_data="/help6"},{text = '𝟕', callback_data="/help7"},{text = '𝟖', callback_data="/help8"}},
+{{text = '𝟗', callback_data="/help9"},{text = '𝟏𝟎', callback_data="/help10"}},
 {{text = 'الاوامر الرئيسيه', callback_data="/help"}},
 {{text = '-𝗟𝗼𝗱𝗞𝗻 𝗧𝗲𝗮𝗺 .', url="t.me/f55f5"}},
 }
@@ -10426,10 +10426,10 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '⓵', callback_data="/help1"},{text = '⓶', callback_data="/help2"},{text = '⓷', callback_data="/help3"}},
-{{text = '⓸', callback_data="/help4"},{text = '⓹', callback_data="/help5"}},
-{{text = '⓺', callback_data="/help6"},{text = '⓻', callback_data="/help7"},{text = '⓼', callback_data="/help8"}},
-{{text = '⓽', callback_data="/help9"},{text = '⓵⓪', callback_data="/help10"}},
+{{text = '𝟏', callback_data="/help1"},{text = '𝟐', callback_data="/help2"},{text = '𝟑', callback_data="/help3"}},
+{{text = '𝟒', callback_data="/help4"},{text = '𝟓', callback_data="/help5"}},
+{{text = '𝟔', callback_data="/help6"},{text = '𝟕', callback_data="/help7"},{text = '𝟖', callback_data="/help8"}},
+{{text = '𝟗', callback_data="/help9"},{text = '𝟏𝟎', callback_data="/help10"}},
 {{text = 'الاوامر الرئيسيه', callback_data="/help"}},
 {{text = '-𝗟𝗼𝗱𝗞𝗻 𝗧𝗲𝗮𝗺 .', url="t.me/f55f5"}},
 }
@@ -10459,10 +10459,11 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '⓵', callback_data="/help1"},{text = '⓶', callback_data="/help2"},{text = '⓷', callback_data="/help3"}},
-{{text = '⓸', callback_data="/help4"},{text = '⓹', callback_data="/help5"}},
-{{text = '⓺', callback_data="/help6"},{text = '⓻', callback_data="/help7"},{text = '⓼', callback_data="/help8"}},
-{{text = '⓽', callback_data="/help9"},{text = '⓵⓪', callback_data="/help10"}},
+{{text = '𝟏', callback_data="/help1"},{text = '𝟐', callback_data="/help2"},{text = '𝟑', callback_data="/help3"}},
+{{text = '𝟒', callback_data="/help4"},{text = '𝟓', callback_data="/help5"}},
+{{text = '𝟔', callback_data="/help6"},{text = '𝟕', callback_data="/help7"},{text = '𝟖', callback_data="/help8"}},
+{{text = '𝟗', callback_data="/help9"},{text = '𝟏𝟎', callback_data="/help10"}},
+{{text = 'الاوامر الرئيسيه', callback_data="/help"}},
 {{text = '𝗟𝗼𝗱𝗞𝗻 𝗧𝗲𝗮𝗺 .', url="t.me/f55f5"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
