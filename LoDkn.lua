@@ -2613,10 +2613,10 @@ end
 end,nil)   
 end
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then  
-Text = "ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄʀ ʟᴏᴅᴋɴ\n\n[♰  ʟᴏᴅᴋɴ ᴄʜᴀɴɴᴇʟ](http://t.me/F55F5)\n\n[♰  ɪɴғᴏ sᴏᴜʀᴄᴇ](http://t.me/lodkn)\n\n[♰  ʟᴏᴅᴋɴ ᴅᴇᴠᴇʟᴏᴘᴇʀ](http://t.me/ckcck)\n\n[♰  ʙᴏᴛ ʟᴏᴅᴋɴ](http://t.me/iepbot)"
+Text = "ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄʀ ʟᴏᴅᴋɴ\n\n[✹  ʟᴏᴅᴋɴ ᴄʜᴀɴɴᴇʟ](http://t.me/F55F5)\n\n[✹  ɪɴғᴏ sᴏᴜʀᴄᴇ](http://t.me/lodkn)\n\n[✹  ʟᴏᴅᴋɴ ᴅᴇᴠᴇʟᴏᴘᴇʀ](http://t.me/ckcck)\n\n[✹  ʙᴏᴛ ʟᴏᴅᴋɴ](http://t.me/iepbot)"
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '♰ sᴏᴜʀᴄʀ ʟᴏᴅᴋɴ',url="t.me/F55F5"}},
+{{text = '♰ sᴏᴜʀᴄʀ ʟᴏᴅᴋɴ',url="t.me/F55F5/123"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/lodkn&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
