@@ -2612,13 +2612,13 @@ end
 end,nil)   
 end
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then  
-Text = "ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄʀ ғʟᴏʀх\n\n[✹  ғʟᴏʀх ᴄʜᴀɴɴᴇʟ](http://t.me/RR5PP)\n\n[✹  ɪɴғᴏ sᴏᴜʀᴄᴇ](http://t.me/N0XX0)\n\n[✹  ғʟᴏʀх ᴅᴇᴠᴇʟᴏᴘᴇʀ](http://t.me/Q7SS7)\n\n[✹  ʙᴏᴛ ғʟᴏʀх](http://t.me/M90XBOT)"
+Text = "ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄʀ ʟᴏᴅᴋɴ\n\n[♰  ʟᴏᴅᴋɴ ᴄʜᴀɴɴᴇʟ](http://t.me/LODKN)\n\n[♰  ɪɴғᴏ sᴏᴜʀᴄᴇ](http://t.me/F55F5)\n\n[♰  ʟᴏᴅᴋɴ ᴅᴇᴠᴇʟᴏᴘᴇʀ](http://t.me/CKCCK)\n\n[♰  ʙᴏᴛ ʟᴏᴅᴋɴ](http://t.me/IEPBOT)"
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '✹ sᴏᴜʀᴄʀ ғʟᴏʀх',url="t.me/N0XX0/123"}},
+{{text = '♰ sᴏᴜʀᴄʀ ʟᴏᴅᴋɴ',url="t.me/F55F5/123"}},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/RR5PP&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/LODKN&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 --------------------------------------------------------------------------------------------------------------
 if Chat_Type == 'GroupBot' and ChekAdd(msg.chat_id_) == true then
