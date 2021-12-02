@@ -2624,7 +2624,7 @@ Text = [[
   ♰ . [ɪɴғᴏ sᴏᴜʀᴄᴇ](t.me/F55F5) 
    
   ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉  
-  ♰ . [ʙᴏᴛ ʟᴏᴅᴋɴ](t.me/iepbot)
+  ♰ . [ʙᴏᴛ ʟᴏᴅᴋɴ](t.me/G1wbot)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
