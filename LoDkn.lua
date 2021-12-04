@@ -9660,6 +9660,18 @@ if text == "تعطيل حساب العمر" and Manager(msg) then
 send(msg.chat_id_, msg.id_, '*♰︙تم تعطيل حساب العمر*')
 database:set(bot_id.." amir:age_Bots"..msg.chat_id_,"close")
 end
+if text == "مبرمج السورس" and ChCheck(msg) or text == "مطور السورس" and ChCheck(msg) or text == "وين المبرمج" and ChCheck(msg) or text == "المبرمج" and ChCheck(msg) then
+Text = [[
+♰ [𝕽𝖾𝗄](https://t.me/ckcck)
+]]
+keyboard = {}
+keyboard.inline_keyboard = {
+{{text = '𝕽𝖾𝗄',url="https://t.me/ckcck"}},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/CKCCK&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+return false
+end
 if text == "تعطيل حساب العمر" and Manager(msg) then
 send(msg.chat_id_, msg.id_, '*♰︙تم تعطيل حساب العمر*')
 database:set(bot_id.." amir:age_Bots"..msg.chat_id_,"close")
@@ -11026,22 +11038,6 @@ end
 if data and data.type_ and data.type_.channel_ and data.type_.channel_.status_ and data.type_.channel_.status_.ID == "ChatMemberStatusEditor" then
 database:sadd(bot_id..'Chek:Groups',v)  
 end 
-end,nil)
-end
-end
-end
-if text == "مبرمج السورس" and ChCheck(msg) or text == "مطور السورس" and ChCheck(msg) or text == "وين المبرمج" and ChCheck(msg) or text == "المبرمج" and ChCheck(msg) then
-Text = [[
-♰ [𝕽𝖾𝗄](https://t.me/ckcck)
-]]
-keyboard = {}
-keyboard.inline_keyboard = {
-{{text = '𝕽𝖾𝗄',url="https://t.me/ckcck"}},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/CKCCK&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-return false
-end
 end,nil)
 end
 end
